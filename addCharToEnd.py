@@ -5,7 +5,7 @@ def addCharToEnd(charToAdd, fileIn, fileOut):
     with open(fileOut, 'w+') as out_file:
         with open(fileIn, 'r') as in_file:
             for line in in_file:
-                out_file.write(line.rstrip('\n') + add)
+                out_file.write(line.rstrip('\n') + add + ' ')
 
 
 while True:
